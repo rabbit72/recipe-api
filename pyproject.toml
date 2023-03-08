@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "recipe-api"
+version = "0.1.0"
+description = "A REST API that can manage recipes that supports create, retrieve, modify operations."
+authors = ["Daniil Shadrin <rabbit72rus@gmail.com>"]
+readme = "README.md"
+packages = [{include = "recipe_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.92.0"
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+motor = "^3.1.1"
+pydantic = "^1.10.5"
+python-dotenv = "^1.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.12.0"
+black = "^23.1.0"
+pylama = {version = "^8.4.1", extras = ["all"]}
+safety = "^2.3.5"
+bandit = {version = "^1.7.4", extras = ["toml"]}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
