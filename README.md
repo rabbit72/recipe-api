@@ -15,7 +15,7 @@ The server restarts on change in `src/` directory on a host machine in case of u
 Clone a project and run the commands below:
 ```bash
 cd recipe-api
-mv .env.template .env
+mv env.template .env
 docker-compose up -d
 ```
 
